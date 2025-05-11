@@ -1,2 +1,14 @@
-# The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R
-Solving all the exercises provided by the book using the R language.
+Urbino`s University - Computing and digital innovation - Social Network Analysis
+
+# The Atlas for the Aspiring Network Scientist exercises in R
+
+<details>
+<summary>
+  
+## The exercises collected in this repository has been taken from:  
+
+</summary>
+
+[![]()](https://www.networkatlas.eu/files/sna_book.pdf)
+  
+</details>
