@@ -935,7 +935,8 @@ Urbino`s University - Computing and digital innovation - Social Network Analysis
 ![915.png](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/ReadmeImgs/915.png)
 ![916.png](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/ReadmeImgs/916.png)
 
-> _I've just converted the PDF document into images to extract the book's cover for reporting the book's link. Since I had all the images available, I've decided to upload all of them to the repository and display them :)_
+> _I've just converted the PDF document into images to extract the book's cover for reporting the book's link. Since I had all the images available, I've decided to upload all of them to the repository and display them ¯\_(ツ)_/¯_
+> You're a hero for having arrived at reading this text ᕙ(  •̀ ᗜ •́  )ᕗ 
 
 </details>
   
