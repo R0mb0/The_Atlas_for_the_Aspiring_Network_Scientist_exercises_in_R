@@ -12,3 +12,7 @@ percent <- function(percentValue, value) {
 }
 
 totMails <- 963
+spamPercent <- 60
+filterAccuracyPercent <- 98
+
+# Write here the solution 

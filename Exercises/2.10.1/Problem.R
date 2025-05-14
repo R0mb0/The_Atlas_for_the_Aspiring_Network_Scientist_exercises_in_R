@@ -21,7 +21,7 @@ mat[3, ] <- c(0.4, 0.8, NA, NA, NA, NA)
 mat[4, ] <- c(0.1, 0.2, NA, NA, NA, NA)
 mat[5, ] <- c(0.3, 0.4, NA, NA, NA, NA)
 
-#Write here the solution 
+# Write here the solution 
 
 print(mat)
 
