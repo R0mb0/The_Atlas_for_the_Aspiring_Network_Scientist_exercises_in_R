@@ -949,3 +949,11 @@ Urbino`s University - Computing and digital innovation - Social Network Analysis
 </details>
   
 </details>
+
+---
+
+## ⚠️ To solve the exercises is necessary install the `here` library
+
+```
+install.packages("here")
+```
