@@ -10,6 +10,8 @@
 # 0.1    0.2  |
 # 0.3    0.4  |
 
+library(here)
+
 # Matrix creation
 
 mat <- matrix(NA, nrow = 5, ncol = 6, 

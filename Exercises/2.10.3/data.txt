@@ -1,0 +1,27 @@
+old letter	new letter
+A		T
+B		U
+C		V
+D		W
+E		X
+F		Y
+G		Z
+H		A
+I		B
+J		C
+K		D
+L		E
+M		F
+N		G
+O		H
+P		I
+Q		J
+R		K
+S		L
+T		M
+U		N
+V		O
+W		P
+X		Q
+Y		R
+Z		S

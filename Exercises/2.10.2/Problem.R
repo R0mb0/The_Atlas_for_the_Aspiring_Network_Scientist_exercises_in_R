@@ -7,6 +7,8 @@
 #emails. Use Bayes’ Theorem to calculate how many of those 963
 #emails in my spam box I should suspect to be non-spam.
 
+library(here)
+
 percent <- function(percentValue, value) {
   return((percentValue / 100) * value)
 }
