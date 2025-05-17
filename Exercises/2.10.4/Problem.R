@@ -20,17 +20,17 @@ library(here)
 
 # Matrix creation
 
-mat <- matrix(NA, nrow = 8, ncol = 3, 
-              dimnames = list(c("∅", "XIV", "XV", "XVI", "{XIV, XV}", "{XV, XVI}", "{XIV, XVI}", "Ω"), c( "Mass", "Belief", "Plausibility")))
+mat <- matrix(NA, nrow = 8, ncol = 4, 
+              dimnames = list(NULL, c("Hypothesis", "Mass", "Belief", "Plausibility")))
 
-mat[1, ] <- c(0.00, NA, NA)
-mat[2, ] <- c(0.16, NA, NA)
-mat[3, ] <- c(0.04, NA, NA)
-mat[4, ] <- c(0.21, NA, NA)
-mat[5, ] <- c(0.34, NA, NA)
-mat[6, ] <- c(0.16, NA, NA)
-mat[7, ] <- c(0.08, NA, NA)
-mat[8, ] <- c(0.01, 1, 1)
+mat[1, ] <- c("∅", 0.00, NA, NA)
+mat[2, ] <- c("XIV", 0.16, NA, NA)
+mat[3, ] <- c("XV", 0.04, NA, NA)
+mat[4, ] <- c("XVI", 0.21, NA, NA)
+mat[5, ] <- c("{XIV, XV}", 0.34, NA, NA)
+mat[6, ] <- c("{XV, XVI}", 0.16, NA, NA)
+mat[7, ] <- c("{XIV, XVI}", 0.08, NA, NA)
+mat[8, ] <- c("Ω", 0.01, 1, 1)
 
 
 # write here the solution 
