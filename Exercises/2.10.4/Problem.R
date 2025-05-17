@@ -1,21 +1,38 @@
-# Draw the probability mass function and the cumulative 
-# distribution of the following outcome probabilities:
+# Suppose that we are examining a painting and we’re trying to
+# date it with the century when it was produced. Find out the Belief
+# and Plausibility values for all hypotheses given the following Mass
+# estimation (note that, by definition Ω = {XIV, XV, XVI} must have
+# Belief and Plausibility equal to one):
 #
-#   Outcome  |  p
-#   -------------
-#       1    |  0.1
-#       2    |  0.15
-#       3    |  0.2
-#       4    |  0.21
-#       5    |  0.17
-#       6    |  0.09
-#       7    |  0.06
-#       8    |  0.02
+# Hypothesis  |  Mass    Belief    Plausibility
+# ---------------------------------------------
+#     ∅       |  0.00
+#    XIV      |  0.16 
+#    XV       |  0.04
+#    XVI      |  0.21
+# {XIV, XV}   |  0.34
+# {XV, XVI}   |  0.16
+# {XIV, XVI}  |  0.08
+#     Ω       |  0.01     1            1 
 
 library(here)
 
-# Define the outcomes and their probabilities
-outcomes <- c(1, 2, 3, 4, 5, 6, 7, 8)
-probabilities <- c(0.1, 0.15, 0.2, 0.21, 0.17, 0.09, 0.06, 0.02)
 
-# Write here the solution 
+# Matrix creation
+
+mat <- matrix(NA, nrow = 8, ncol = 3, 
+              dimnames = list(c("∅", "XIV", "XV", "XVI", "{XIV, XV}", "{XV, XVI}", "{XIV, XVI}", "Ω"), c( "Mass", "Belief", "Plausibility")))
+
+mat[1, ] <- c(0.00, NA, NA)
+mat[2, ] <- c(0.16, NA, NA)
+mat[3, ] <- c(0.04, NA, NA)
+mat[4, ] <- c(0.21, NA, NA)
+mat[5, ] <- c(0.34, NA, NA)
+mat[6, ] <- c(0.16, NA, NA)
+mat[7, ] <- c(0.08, NA, NA)
+mat[8, ] <- c(0.01, 1, 1)
+
+
+# write here the solution 
+
+print(mat)
