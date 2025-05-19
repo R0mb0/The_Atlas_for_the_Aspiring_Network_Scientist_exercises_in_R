@@ -22,7 +22,7 @@ num_edges <- ecount(g)
 cat("|V| (number of nodes):", num_vertices, "\n")
 cat("|E| (number of edges):", num_edges, "\n")
 
-# Drawing the graph plot (optional)
+# Drawing the graph's plot (optional)
 plot(g, 
      vertex.size=30, 
      vertex.color="red", 
