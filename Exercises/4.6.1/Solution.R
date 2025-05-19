@@ -18,7 +18,7 @@ softmax <- function(z) {
 
 y <- softmax(x)
 
-# Drawing the results (not required)
+# Drawing the results.
 plot(x, y, 
      main = "Softmax Output vs Original Vector", 
      xlab = "Original Values", 
