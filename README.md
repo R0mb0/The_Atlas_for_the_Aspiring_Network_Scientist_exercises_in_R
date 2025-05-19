@@ -957,4 +957,5 @@ Urbino`s University - Computing and digital innovation - Social Network Analysis
 ```
 install.packages("here")
 install.packages("e1071")
+install.packages("entropy")
 ```
