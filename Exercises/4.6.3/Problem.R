@@ -3,6 +3,7 @@
 # MSE functions and compare their outputs when applied to the vector, by plotting 
 # each of them.
 
+library(here)
 set.seed(42)
 
 # Write here the solution

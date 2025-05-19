@@ -3,6 +3,7 @@
 # ment the ReLU function. Plot the result with the original vector on
 # the x axis and the ReLU output on the y axis.
 
+library(here)
 set.seed(42)
 
 # Write here the solution
