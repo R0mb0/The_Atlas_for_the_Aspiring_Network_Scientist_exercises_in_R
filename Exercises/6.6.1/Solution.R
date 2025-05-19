@@ -3,6 +3,8 @@
 library(here)
 library(igraph)
 
+# Solution
+
 # Defining the graph
 
 # Let's label the nodes as 1, 2, 3, 4, 5

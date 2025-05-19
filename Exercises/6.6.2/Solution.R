@@ -7,6 +7,8 @@
 library(here)
 library(igraph)
 
+# Solution
+
 # Creating edges
 edges <- c(
   "A", "B",
