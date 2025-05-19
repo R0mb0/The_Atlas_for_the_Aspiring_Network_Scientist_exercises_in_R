@@ -952,8 +952,9 @@ Urbino`s University - Computing and digital innovation - Social Network Analysis
 
 ---
 
-## ⚠️ To solve the exercises is necessary install the `here` library
+## ⚠️ Libraries installed to solve the exercises
 
 ```
 install.packages("here")
+install.packages("e1071")
 ```
