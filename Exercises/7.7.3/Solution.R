@@ -6,46 +6,65 @@
 # and its nodes connect to it.
 
 library(here)
+library(igraph)
 
-# Read the data
-lines <- readLines("data.txt")
-# Converting data to a list of node numbers
-hyperedges <- lapply(lines, function(line) as.numeric(strsplit(line, " ")[[1]]))
+# Reading your data
+df <- read.table("data.txt", header=TRUE)
 
-# Solution 
+# Hyperedges as list: each row is a hyperedge, nonzero entries only
+hyperedges <- apply(df, 1, function(row) as.numeric(row[row != 0]))
 
-# Building the Unipartite Network
+# Solution
 
-# Function to generate all unordered pairs from a vector
-get_pairs <- function(nodes) {
-  if(length(nodes) < 2) return(NULL)
-  t(combn(nodes, 2))
-}
+# Here solving the third exercise question (for graph convenience)
 
-# Applying to all hyperedges and combine
+# All unique nodes
+all_nodes <- sort(unique(unlist(hyperedges)))
+
+# Creating bipartite edge list: hyperedge node -> member node 
+#(Bipartite Plot (nodes + hyperedges))
+bipartite_edges <- data.frame(
+  from = rep(paste0("H", seq_along(hyperedges)), lengths(hyperedges)),
+  to = as.character(unlist(hyperedges))
+)
+
+#===============================================================================
+#                      OPTIONAL: Creating a graph
+
+# Building igraph object
+g_bipartite <- graph_from_data_frame(bipartite_edges, directed=FALSE)
+V(g_bipartite)$type <- grepl("^H", V(g_bipartite)$name)
+V(g_bipartite)$color <- ifelse(V(g_bipartite)$type, "skyblue", "orange")
+
+# Plot bipartite graph
+plot(g_bipartite,
+     layout = layout_with_fr,
+     vertex.size = 26,
+     vertex.label.cex=0.9,
+     vertex.color=V(g_bipartite)$color,
+     main = "Hypergraph as Bipartite Network\n(Skyblue: Hyperedges, Orange: Nodes)"
+)
+#===============================================================================
+
+# Here solving the second exercise question
+
+# For each hyperedge, create all possible pairs 
+#(Clique Expansion Plot (Unipartite))
+get_pairs <- function(nodes) if(length(nodes) < 2) NULL else t(combn(nodes, 2))
 all_pairs <- do.call(rbind, lapply(hyperedges, get_pairs))
-unipartite_edges <- unique(all_pairs)  # Removing duplicate edges
+all_pairs <- unique(all_pairs)
 
-# Optional (converting to data frame for inspection)
-unipartite_df <- as.data.frame(unipartite_edges)
-colnames(unipartite_df) <- c("node1", "node2")
-head(unipartite_df)
+#===============================================================================
+#                      OPTIONAL: Creating a graph
 
-# Building the Bipartite Network
+# Building igraph object for unipartite graph
+g_unipartite <- graph_from_edgelist(all_pairs, directed=FALSE)
 
-# Assigning a unique id to each hyperedge
-num_hyperedges <- length(hyperedges)
-hyperedge_names <- paste0("H", seq_len(num_hyperedges))
-
-# For each hyperedge, create edges between the hyperedge node and its members
-bipartite_edges <- data.frame()
-for(i in seq_along(hyperedges)) {
-  edge <- data.frame(
-    hyperedge = hyperedge_names[i],
-    node = hyperedges[[i]]
-  )
-  bipartite_edges <- rbind(bipartite_edges, edge)
-}
-
-head(bipartite_edges)
-# Columns: hyperedge (e.g. "H1"), node (number)
+# Plotting unipartite graph
+plot(g_unipartite,
+     layout = layout_with_fr,
+     vertex.size = 28,
+     vertex.label.cex=1.0,
+     main = "Clique Expansion of Hypergraph"
+)
+#===============================================================================
