@@ -1,50 +1,39 @@
-# The network in http://www.networkatlas.eu/exercises/7/2/
-# data.txt is multilayer. The data has three columns: source and
-# target node, and edge type. The edge type is either the numerical
-# id of the layer, or “C” for an inter-layer coupling. Given that this is
-# a one-to-one multilayer network, determine whether this network
-# has a star, clique or chain coupling.
+# Create the graph
+g <- graph_from_data_frame(data[,c("source","target")], directed=FALSE)
 
-library(here)
+E(g)$color <- ifelse(data$type == "C", "red", "grey")
+E(g)$lty <- ifelse(data$type == "C", 2, 1)
 
-# Reading the data
-data <- read.table("data.txt", header = FALSE, stringsAsFactors = FALSE)
-colnames(data) <- c("source", "target", "type")
+sources_inter <- unique(inter_layer$source)
+targets_inter <- unique(inter_layer$target)
+V(g)$color <- ifelse(V(g)$name %in% sources_inter, "skyblue",
+                     ifelse(V(g)$name %in% targets_inter, "palegreen", "white"))
 
-# Solution 
+# --- Plot with legend below ---
 
-# Separating intra-layer and inter-layer edges
-intra_layer <- subset(data, type != "C")
-inter_layer <- subset(data, type == "C")
 
-# Checking inter-layer edges
-print(inter_layer)
+# Plot the graph, leaving space at the bottom
+plot(
+  g,
+  vertex.size=30,
+  vertex.label.cex=1.2,
+  vertex.label.color="black",
+  edge.width=2,
+  main=sprintf("Multilayer network (%s coupling)", coupling_type),
+  margin=0.2
+)
 
-# Looking how many times each source and target appears in inter-layer connections
-table(inter_layer$source)
-table(inter_layer$target)
-
-# Grouping by source to see which targets each connects to
-split_by_source <- split(inter_layer, inter_layer$source)
-lapply(split_by_source, function(df) df$target)
-
-# Checking if each source connects to more than one unique target, and if target sets overlap
-unique_targets_per_source <- lapply(split_by_source, function(df) unique(df$target))
-overlap <- Reduce(intersect, unique_targets_per_source)
-
-# Output checks results
-cat("Number of unique targets per source:\n")
-print(sapply(unique_targets_per_source, length))
-cat("Overlap between target sets of each source:\n")
-print(overlap)
-
-# Determining coupling type
-if (all(sapply(unique_targets_per_source, length) > 1) && length(overlap) == 0) {
-  cat("The coupling is STAR: Each group of 'central' nodes connects to a unique set of targets (no overlap).\n")
-} else if (all(sapply(unique_targets_per_source, length) == length(unique(unlist(unique_targets_per_source))))) {
-  cat("The coupling is CLIQUE: Each source connects to every target.\n")
-} else if (all(sapply(unique_targets_per_source, length) == 1) && length(overlap) == 0) {
-  cat("The coupling is CHAIN: Each source connects to exactly one unique target.\n")
-} else {
-  cat("The coupling does not fit standard star, clique, or chain patterns, further analysis needed.\n")
-}
+# Add the legend below the plot
+legend(
+  x = "bottom",
+  inset = -0.32, # negative inset puts legend below plot, adjust as needed
+  legend = c("Intra-layer edge", "Inter-layer coupling", "Source node", "Target node"),
+  col = c("grey", "red", "skyblue", "palegreen"),
+  pt.cex = c(NA, NA, 2, 2),
+  pch = c(NA, NA, 21, 21),
+  lty = c(1, 2, NA, NA),
+  lwd = c(2, 2, NA, NA),
+  bty = "n",
+  horiz = TRUE,
+  xpd = TRUE # allow drawing outside plot region
+)
