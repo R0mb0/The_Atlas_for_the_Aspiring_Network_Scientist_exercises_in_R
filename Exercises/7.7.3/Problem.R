@@ -8,10 +8,8 @@
 library(here)
 #library(igraph)
 
-# Reading your data
-df <- read.table("data.txt", header=TRUE)
-
-# Hyperedges as list: each row is a hyperedge, nonzero entries only
-hyperedges <- apply(df, 1, function(row) as.numeric(row[row != 0]))
+# Reading the hypergraph data (each line is a hyperedge)
+lines <- readLines("data.txt")
+hyperedges <- lapply(lines, function(x) strsplit(x, "\\s+")[[1]])
 
 # Write here the solution 
