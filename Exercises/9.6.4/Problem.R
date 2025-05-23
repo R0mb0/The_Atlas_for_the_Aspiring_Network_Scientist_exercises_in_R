@@ -3,6 +3,7 @@
 # tion, then in log-log scale, finally plot the complement of the
 # cumulative distribution.
 
+library(here)
 library(igraph)
 
 # Read the edge list
