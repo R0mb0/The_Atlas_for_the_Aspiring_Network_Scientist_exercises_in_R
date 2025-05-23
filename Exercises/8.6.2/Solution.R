@@ -24,7 +24,7 @@ if (length(nodes1) == 248) {
   axis_label <- "to"
   other_label <- "from"
 } else {
-  print("Neither axis has 248 unique nodes!")
+  stop("Neither axis has 248 unique nodes!")
 }
 
 # Building the incidence matrix (rows: axis_nodes, columns: other nodes)
