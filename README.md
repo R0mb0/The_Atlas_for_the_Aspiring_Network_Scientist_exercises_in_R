@@ -960,4 +960,6 @@ install.packages("e1071")
 install.packages("entropy")
 install.packages("igraph")
 install.packages("poweRlaw")
+install.packages("BiocManager")
+BiocManager::install("RBGL")
 ```
