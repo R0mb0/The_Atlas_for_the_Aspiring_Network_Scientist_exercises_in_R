@@ -1,15 +1,27 @@
+# Find all cycles in the network in http://www.networkatlas.eu/
+# exercises/10/2/data.txt. Note: the network is directed.
+
 library(here)
+library(RBGL)
 library(igraph)
 
-# Read the edge list (assuming two columns, space separated, no header)
-edges <- read.table("data.txt", header = FALSE)
-g <- graph_from_edgelist(as.matrix(edges), directed = TRUE)
+# Reading the edge list
+edges <- read.table("data.txt", header = FALSE, stringsAsFactors = FALSE)
+nodes <- unique(c(edges$V1, edges$V2))
 
-# all_simple_cycles() returns a list of cycles (each as a vector of vertex ids)
-cycles <- all_simple_cycles(g)
+# Solution (this should be the solution, but I have problems to compile RBGL)
 
-# Print cycles with node numbers as in the input
+# Creating a directed graphNEL object
+gNEL <- new("graphNEL", nodes = as.character(nodes), edgemode = "directed")
+for(i in 1:nrow(edges)) {
+  gNEL <- addEdge(as.character(edges$V1[i]), as.character(edges$V2[i]), gNEL)
+}
+
+# Finding all cycles
+cycles <- johnson.all.cycles(gNEL)
+
+# Printing cycles
 cat("All cycles found:\n")
 for (cyc in cycles) {
-  cat(V(g)$name[cyc], "\n")
+  cat(paste(cyc, collapse = " -> "), "\n")
 }
