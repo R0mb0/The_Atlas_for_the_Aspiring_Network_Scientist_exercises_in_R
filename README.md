@@ -26,7 +26,6 @@ Urbino`s University - Computing and digital innovation - Social Network Analysis
 
 </summary>
 
-![1.png](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/ReadmeImgs/1.png)
 ![2.png](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/ReadmeImgs/2.png)
 ![3.png](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/ReadmeImgs/3.png)
 ![4.png](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/ReadmeImgs/4.png)
