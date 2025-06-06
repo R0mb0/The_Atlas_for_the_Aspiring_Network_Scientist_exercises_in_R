@@ -2,6 +2,7 @@
 # exploration of a BFS. Start from the node in the bottom right
 # corner.
 
+library(here)
 library(igraph)
 
 # Building the undirected graph
