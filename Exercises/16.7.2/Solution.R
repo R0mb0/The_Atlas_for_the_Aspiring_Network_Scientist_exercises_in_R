@@ -27,3 +27,9 @@ plot(p_vals, largest_cc_sizes, type="b", pch=19,
      xlab="p (edge probability)",
      ylab="Largest Connected Component Size",
      main="Phase Transition in Erdős-Rényi Graph (n = 1000)")
+
+# In the plot, should be visible that the real network’s degree CCDF decreases 
+# more slowly and exhibits a heavier tail than the Erdős-Rényi graph, indicating 
+# the presence of nodes with much higher degree (hubs), while the Erdős-Rényi 
+# graph’s CCDF drops off rapidly, reflecting its narrow, random degree 
+# distribution.
