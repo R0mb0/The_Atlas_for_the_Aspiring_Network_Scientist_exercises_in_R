@@ -80,7 +80,7 @@ for (net_idx in 1:2) {
     avg_infected <- colMeans(infected_mat)
     results[[paste0(netname, "_mu_", mu)]] <- avg_infected
     
-    # Plot
+    # Plotting 
     plot(avg_infected, type="l", ylim=c(0,1), lwd=2,
          main=sprintf("%s SIS: beta=%.2f, mu=%.2f", netname, betas, mu),
          xlab="Time step", ylab="Fraction infected")
