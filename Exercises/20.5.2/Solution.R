@@ -75,16 +75,31 @@ print("Network 2 (data2.txt) - avg time to 80% infected:")
 print(results2)
 
 # How do you tell which network is which?
+
+
   
 # _Gn,p (Erdős–Rényi random graph):_
+
 #  More homogeneous degree distribution.
+
 #  SI infection spreads moderately fast.
 
+
+
 # _Power law (scale-free) network:_
+
 # Some nodes (hubs) have very high degree.
-# SI infection spreads much faster (especially for larger β), as hubs accelerate the process.
+
+# SI infection spreads much faster (especially for larger β), as hubs accelerate t
+# he process.
+
+
 
 # So:
 
-# The network where the disease spreads faster (lower average time to 80% infected) is the power law (scale-free) network.
+
+
+# The network where the disease spreads faster (lower average time to 80% 
+# infected) is the power law (scale-free) network.
+
 # The network where it takes longer is the random (Gn,p) network.
