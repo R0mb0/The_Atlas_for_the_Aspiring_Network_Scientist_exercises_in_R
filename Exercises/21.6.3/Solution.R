@@ -93,7 +93,7 @@ classic_mean <- rowMeans(classic_mat)
 resist_mat <- replicate(runs, resist_SI(g, beta=0.3, steps=steps))
 resist_mean <- rowMeans(resist_mat)
 
-# Plot
+# Plotting
 plot(classic_mean, type="l", col="blue", lwd=2, ylim=c(0,1),
      ylab="Fraction Infected (I)", xlab="Step",
      main="SI vs SI with Resistance after 2 Failed Attempts (mean of 10 runs)")
