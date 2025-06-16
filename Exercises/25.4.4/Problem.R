@@ -1,20 +1,17 @@
-# Divide the network at http://www.networkatlas.eu/exercises/
-# 25/1/data.txt into train and test sets using a ten-fold cross vali-
-# dation scheme. Draw its confusion matrix after applying a jaccard
-# link prediction to it. Use 0.5 as you cutoff score: scores equal to or
-# higher than 0.5 are predicted to be an edge, anything lower is pre-
-# dicted to be a non-edge. (Hint: make heavy use of scikit-learn
-# capabilities of performing KFold divisions and building confusion
-# matrices)
+# Draw the precision-recall curves of the four link predictors as used
+# in the previous questions. Which of those has the highest AUC?
 
 library(here)
 library(igraph)
 library(caret)
-library(yardstick)
+library(PRROC)
 
 ########################### Helper functions ###################################
-
-# Function to compute Jaccard index for a pair in a given graph
+# Predictor functions
+preferential_attachment <- function(g, v1, v2) {
+  deg <- degree(g)
+  deg[v1] * deg[v2]
+}
 jaccard_score <- function(g, v1, v2) {
   n1 <- neighbors(g, v1)
   n2 <- neighbors(g, v2)
@@ -22,8 +19,21 @@ jaccard_score <- function(g, v1, v2) {
   union_len <- length(union(n1, n2))
   if (union_len == 0) return(0) else return(intersect_len / union_len)
 }
+adamic_adar_score <- function(g, v1, v2) {
+  n1 <- neighbors(g, v1)
+  n2 <- neighbors(g, v2)
+  comm <- intersect(n1, n2)
+  if (length(comm) == 0) return(0)
+  sum(1 / log(degree(g, comm)))
+}
+resource_allocation_score <- function(g, v1, v2) {
+  n1 <- neighbors(g, v1)
+  n2 <- neighbors(g, v2)
+  comm <- intersect(n1, n2)
+  if (length(comm) == 0) return(0)
+  sum(1 / degree(g, comm))
+}
 ####################### End Helper functions ###################################
-
 
 # Reading the data and building the graph
 edges <- read.table("data.txt", header=FALSE)

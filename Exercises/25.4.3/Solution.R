@@ -9,41 +9,7 @@
 library(igraph)
 library(caret)
 
-# Reading the data and building the graph
-edges <- read.table("data.txt", header=FALSE)
-colnames(edges) <- c("from", "to")
-edges[] <- lapply(edges, as.character)
-g_full <- graph_from_edgelist(as.matrix(edges), directed=FALSE)
-
-all_nodes <- V(g_full)$name
-
-# Solution
-
-# Generating all possible node pairs
-all_pairs <- t(combn(all_nodes, 2))
-all_edges_df <- data.frame(from=all_pairs[,1], to=all_pairs[,2], stringsAsFactors=FALSE)
-
-# Marking which pairs are actual edges
-all_edges_df$edge <- mapply(function(f, t) {
-  are.connected(g_full, f, t)
-}, all_edges_df$from, all_edges_df$to)
-
-# Getting positive (edges) and negative (non-edges) samples
-pos_edges <- all_edges_df[all_edges_df$edge, c("from", "to")]
-neg_edges <- all_edges_df[!all_edges_df$edge, c("from", "to")]
-
-# 5. For cross-validation, combine positives and sample negatives to match 
-# number of positives (for balanced evaluation)
-set.seed(42)
-neg_edges <- neg_edges[sample(nrow(neg_edges), nrow(pos_edges)), ]
-data_cv <- rbind(
-  data.frame(pos_edges, label=1),
-  data.frame(neg_edges, label=0)
-)
-data_cv <- data_cv[sample(nrow(data_cv)), ] # Shuffle
-
-# 10-fold cross-validation
-folds <- createFolds(data_cv$label, k=10, list=TRUE, returnTrain=FALSE)
+########################### Helper functions ###################################
 
 # Predictor functions
 preferential_attachment <- function(g, v1, v2) {
@@ -71,6 +37,43 @@ resource_allocation_score <- function(g, v1, v2) {
   if (length(comm) == 0) return(0)
   sum(1 / degree(g, comm))
 }
+####################### End Helper functions ###################################
+
+# Reading the data and building the graph
+edges <- read.table("data.txt", header=FALSE)
+colnames(edges) <- c("from", "to")
+edges[] <- lapply(edges, as.character)
+g_full <- graph_from_edgelist(as.matrix(edges), directed=FALSE)
+
+all_nodes <- V(g_full)$name
+
+# Solution
+
+# Generating all possible node pairs
+all_pairs <- t(combn(all_nodes, 2))
+all_edges_df <- data.frame(from=all_pairs[,1], to=all_pairs[,2], stringsAsFactors=FALSE)
+
+# Marking which pairs are actual edges
+all_edges_df$edge <- mapply(function(f, t) {
+  are.connected(g_full, f, t)
+}, all_edges_df$from, all_edges_df$to)
+
+# Getting positive (edges) and negative (non-edges) samples
+pos_edges <- all_edges_df[all_edges_df$edge, c("from", "to")]
+neg_edges <- all_edges_df[!all_edges_df$edge, c("from", "to")]
+
+# For cross-validation, combine positives and sample negatives to match 
+# number of positives (for balanced evaluation)
+set.seed(42)
+neg_edges <- neg_edges[sample(nrow(neg_edges), nrow(pos_edges)), ]
+data_cv <- rbind(
+  data.frame(pos_edges, label=1),
+  data.frame(neg_edges, label=0)
+)
+data_cv <- data_cv[sample(nrow(data_cv)), ] # Shuffle
+
+# 10-fold cross-validation
+folds <- createFolds(data_cv$label, k=10, list=TRUE, returnTrain=FALSE)
 
 # Running cross-validation & collect scores/labels
 label_all = c()

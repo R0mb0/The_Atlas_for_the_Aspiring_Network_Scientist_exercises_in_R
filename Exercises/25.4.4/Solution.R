@@ -1,16 +1,12 @@
-# Draw the ROC curves on the cross validation of the network used
-# at the previous question, comparing the following link predictors:
-# preferential attachment, jaccard, Adamic-Adar, and resource alloca-
-# tion. Which of those has the highest AUC? (Again, scikit-learn
-# has helper functions for you)
+# Draw the precision-recall curves of the four link predictors as used
+# in the previous questions. Which of those has the highest AUC?
 
 library(here)
 library(igraph)
 library(caret)
-library(pROC)
+library(PRROC)
 
 ########################### Helper functions ###################################
-
 # Predictor functions
 preferential_attachment <- function(g, v1, v2) {
   deg <- degree(g)
@@ -47,13 +43,13 @@ g_full <- graph_from_edgelist(as.matrix(edges), directed=FALSE)
 
 all_nodes <- V(g_full)$name
 
-# Solution
+# Solution 
 
 # Generating all possible node pairs
 all_pairs <- t(combn(all_nodes, 2))
 all_edges_df <- data.frame(from=all_pairs[,1], to=all_pairs[,2], stringsAsFactors=FALSE)
 
-# Mark which pairs are actual edges
+# Marking which pairs are actual edges
 all_edges_df$edge <- mapply(function(f, t) {
   are.connected(g_full, f, t)
 }, all_edges_df$from, all_edges_df$to)
@@ -62,8 +58,7 @@ all_edges_df$edge <- mapply(function(f, t) {
 pos_edges <- all_edges_df[all_edges_df$edge, c("from", "to")]
 neg_edges <- all_edges_df[!all_edges_df$edge, c("from", "to")]
 
-# For cross-validation, combine positives and sample negatives to match number 
-# of positives (for balanced evaluation)
+# For cross-validation, combine positives and sample negatives to match number of positives (for balanced evaluation)
 set.seed(42)
 neg_edges <- neg_edges[sample(nrow(neg_edges), nrow(pos_edges)), ]
 data_cv <- rbind(
@@ -101,31 +96,31 @@ for(i in seq_along(folds)) {
   }
 }
 
-# Computing and plotting ROC curves & AUC
-roc_pa <- roc(label_all, score_pa, quiet=TRUE)
-roc_jaccard <- roc(label_all, score_jaccard, quiet=TRUE)
-roc_adamic <- roc(label_all, score_adamic, quiet=TRUE)
-roc_ra <- roc(label_all, score_ra, quiet=TRUE)
+# Calculating PR curves and AUCs
+pr_pa <- pr.curve(scores.class0=score_pa[label_all==1], scores.class1=score_pa[label_all==0], curve=TRUE)
+pr_jaccard <- pr.curve(scores.class0=score_jaccard[label_all==1], scores.class1=score_jaccard[label_all==0], curve=TRUE)
+pr_adamic <- pr.curve(scores.class0=score_adamic[label_all==1], scores.class1=score_adamic[label_all==0], curve=TRUE)
+pr_ra <- pr.curve(scores.class0=score_ra[label_all==1], scores.class1=score_ra[label_all==0], curve=TRUE)
 
-plot(roc_pa, col="red", lwd=2, main="ROC Curves: Link Predictors")
-plot(roc_jaccard, col="blue", lwd=2, add=TRUE)
-plot(roc_adamic, col="green", lwd=2, add=TRUE)
-plot(roc_ra, col="purple", lwd=2, add=TRUE)
-legend("bottomright", legend=c(
-  sprintf("Pref. Attach. (AUC = %.3f)", auc(roc_pa)),
-  sprintf("Jaccard (AUC = %.3f)", auc(roc_jaccard)),
-  sprintf("Adamic-Adar (AUC = %.3f)", auc(roc_adamic)),
-  sprintf("Resource Alloc. (AUC = %.3f)", auc(roc_ra))
+# Plotting PR curves
+plot(pr_pa$curve[,1], pr_pa$curve[,2], type="l", col="red", lwd=2, xlab="Recall", ylab="Precision",
+     main="Precision-Recall Curves: Link Predictors", xlim=c(0,1), ylim=c(0,1))
+lines(pr_jaccard$curve[,1], pr_jaccard$curve[,2], col="blue", lwd=2)
+lines(pr_adamic$curve[,1], pr_adamic$curve[,2], col="green", lwd=2)
+lines(pr_ra$curve[,1], pr_ra$curve[,2], col="purple", lwd=2)
+legend("topright", legend=c(
+  sprintf("Pref. Attach. (AUC = %.3f)", pr_pa$auc.integral),
+  sprintf("Jaccard (AUC = %.3f)", pr_jaccard$auc.integral),
+  sprintf("Adamic-Adar (AUC = %.3f)", pr_adamic$auc.integral),
+  sprintf("Resource Alloc. (AUC = %.3f)", pr_ra$auc.integral)
 ), col=c("red", "blue", "green", "purple"), lwd=2)
 
-# 10. Printing AUCs and the best predictor
+# Printing AUCs and best curve
 auc_vals <- c(
-  Preferential_Attachment=auc(roc_pa),
-  Jaccard=auc(roc_jaccard),
-  Adamic_Adar=auc(roc_adamic),
-  Resource_Allocation=auc(roc_ra)
+  Preferential_Attachment=pr_pa$auc.integral,
+  Jaccard=pr_jaccard$auc.integral,
+  Adamic_Adar=pr_adamic$auc.integral,
+  Resource_Allocation=pr_ra$auc.integral
 )
-
-# Printing the rest of the results 
-print(auc_vals)
-cat(sprintf("\nHighest AUC: %s (%.3f)\n", names(which.max(auc_vals)), max(auc_vals)))
+print(round(auc_vals, 3))
+cat(sprintf("\nHighest PR AUC: %s (%.3f)\n", names(which.max(auc_vals)), max(auc_vals)))

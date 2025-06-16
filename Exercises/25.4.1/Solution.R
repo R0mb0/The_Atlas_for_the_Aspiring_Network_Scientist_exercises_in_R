@@ -12,6 +12,19 @@ library(igraph)
 library(caret)
 library(yardstick)
 
+########################### Helper functions ###################################
+
+# Function to compute Jaccard index for a pair in a given graph
+jaccard_score <- function(g, v1, v2) {
+  n1 <- neighbors(g, v1)
+  n2 <- neighbors(g, v2)
+  intersect_len <- length(intersect(n1, n2))
+  union_len <- length(union(n1, n2))
+  if (union_len == 0) return(0) else return(intersect_len / union_len)
+}
+####################### End Helper functions ###################################
+
+
 # Reading the data and building the graph
 edges <- read.table("data.txt", header=FALSE)
 colnames(edges) <- c("from", "to")
@@ -47,15 +60,6 @@ data_cv <- data_cv[sample(nrow(data_cv)), ] # Shuffle
 
 # 10-fold cross-validation
 folds <- createFolds(data_cv$label, k=10, list=TRUE, returnTrain=FALSE)
-
-# Function to compute Jaccard index for a pair in a given graph
-jaccard_score <- function(g, v1, v2) {
-  n1 <- neighbors(g, v1)
-  n2 <- neighbors(g, v2)
-  intersect_len <- length(intersect(n1, n2))
-  union_len <- length(union(n1, n2))
-  if (union_len == 0) return(0) else return(intersect_len / union_len)
-}
 
 # Running cross-validation and collect predictions
 true_labels <- c()
