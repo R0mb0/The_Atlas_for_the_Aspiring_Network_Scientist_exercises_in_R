@@ -51,7 +51,7 @@ SI_simulation <- function(g, beta, target_frac=0.8) {
   return(t)
 }
 
-# Run SI Simulations on Both Networks
+# Running SI Simulations on Both Networks
 set.seed(42)
 betas <- c(0.05, 0.1, 0.2)
 results1 <- data.frame(beta=betas, avg_time=NA)
