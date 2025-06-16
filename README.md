@@ -962,4 +962,5 @@ install.packages("poweRlaw")
 install.packages("BiocManager")
 BiocManager::install("RBGL")
 install.packages("RColorBrewer")
+install.packages("infotheo")
 ```
