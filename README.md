@@ -963,4 +963,6 @@ install.packages("BiocManager")
 BiocManager::install("RBGL")
 install.packages("RColorBrewer")
 install.packages("infotheo")
+install.packages("caret")
+install.packages("yardstick")
 ```
