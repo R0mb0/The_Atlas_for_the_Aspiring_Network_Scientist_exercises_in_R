@@ -968,4 +968,6 @@ install.packages("yardstick")
 install.packages("pROC")
 install.packages("PRROC")
 install.packages("Matrix")
+install.packages("ggplot2")
+install.packages("viridis")
 ```
