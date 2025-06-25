@@ -53,6 +53,7 @@ right_shares_no_na <- right_shares[!is.na(right_shares)]
 # Calculating the average share
 average_share <- mean(right_shares_no_na)
 
+# Printing solution 
 cat(sprintf("Average share of right-leaning nodes in ego networks: %.4f\n", average_share))
 
 ################################################################################
