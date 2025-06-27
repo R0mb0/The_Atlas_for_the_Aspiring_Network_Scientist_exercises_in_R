@@ -9,13 +9,13 @@ for dir in */ ; do
   echo "<details>" >> "$OUTPUT_FILE"
   echo "<summary>" >> "$OUTPUT_FILE"
   echo "" >> "$OUTPUT_FILE"
-  echo "## $DIRNAME" >> "$OUTPUT_FILE"
+  echo "### $DIRNAME" >> "$OUTPUT_FILE"
   echo "" >> "$OUTPUT_FILE"
   echo "</summary>" >> "$OUTPUT_FILE"
   echo "" >> "$OUTPUT_FILE"
   
   # Problem
-  echo "### Problem" >> "$OUTPUT_FILE"
+  echo "#### Problem" >> "$OUTPUT_FILE"
   echo "" >> "$OUTPUT_FILE"
   echo '```R' >> "$OUTPUT_FILE"
   if [ -f "${DIRNAME}/Problem.R" ]; then
@@ -25,7 +25,7 @@ for dir in */ ; do
   echo "" >> "$OUTPUT_FILE"
   
   # Solution
-  echo "### Solution" >> "$OUTPUT_FILE"
+  echo "#### Solution" >> "$OUTPUT_FILE"
   echo "" >> "$OUTPUT_FILE"
   echo '```R' >> "$OUTPUT_FILE"
   if [ -f "${DIRNAME}/Solution.R" ]; then
