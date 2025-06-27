@@ -1,39 +1,42 @@
 #!/bin/bash
 
-OUTPUT_FILE="complete_exercise.md"
-echo "" > "$OUTPUT_FILE"
+# Vai nella cartella Exercises (se non sei già lì)
+cd "$(dirname "$0")"
+
+OUTPUT="complete_exercise.md"
+echo "" > "$OUTPUT" # svuota il file se già esiste
 
 for dir in */ ; do
-  # Rimuovo la barra finale dal nome della cartella
-  DIRNAME="${dir%/}"
-  echo "<details>" >> "$OUTPUT_FILE"
-  echo "<summary>" >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  echo "### $DIRNAME" >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  echo "</summary>" >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  
-  # Problem
-  echo "#### Problem" >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  echo '```R' >> "$OUTPUT_FILE"
-  if [ -f "${DIRNAME}/Problem.R" ]; then
-    cat "${DIRNAME}/Problem.R" >> "$OUTPUT_FILE"
-  fi
-  echo '```' >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  
-  # Solution
-  echo "#### Solution" >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  echo '```R' >> "$OUTPUT_FILE"
-  if [ -f "${DIRNAME}/Solution.R" ]; then
-    cat "${DIRNAME}/Solution.R" >> "$OUTPUT_FILE"
-  fi
-  echo '```' >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
-  
-  echo "</details>" >> "$OUTPUT_FILE"
-  echo "" >> "$OUTPUT_FILE"
+    # Rimuove la barra finale dal nome della cartella
+    subdir="${dir%/}"
+    echo "<details>" >> "$OUTPUT"
+    echo "<summary>" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo "## $subdir" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo "</summary>" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo "### Problem" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo '```R' >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    if [[ -f "$subdir/Problem.R" ]]; then
+        # tabula ogni riga con 4 spazi
+        sed 's/^/    /' "$subdir/Problem.R" >> "$OUTPUT"
+    fi
+    echo "" >> "$OUTPUT"
+    echo '```' >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo "### Solution" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo '```R' >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    if [[ -f "$subdir/Solution.R" ]]; then
+        sed 's/^/    /' "$subdir/Solution.R" >> "$OUTPUT"
+    fi
+    echo "" >> "$OUTPUT"
+    echo '```' >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+    echo "</details>" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
 done
