@@ -971,3 +971,12 @@ install.packages("Matrix")
 install.packages("ggplot2")
 install.packages("viridis")
 ```
+
+<details>
+<summary>
+
+## 📝 Summary of exercises
+
+</summary>
+
+</details>
