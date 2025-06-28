@@ -35,8 +35,6 @@ fit <- lm(log_ccdf ~ log_deg)
 cat("Estimated exponent (linear regression):", -coef(fit)[2], "\n")
 summary(fit)
 
-library(poweRlaw)
-
 # Create a discrete power law object
 pl_model <- displ$new(deg)
 
