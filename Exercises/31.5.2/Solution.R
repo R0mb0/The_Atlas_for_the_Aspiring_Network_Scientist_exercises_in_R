@@ -28,7 +28,7 @@ edge_centric_pearson <- cor(edge_deg_df$k1, edge_deg_df$k2)
 
 cat(sprintf("Edge-centric Pearson correlation (degree assortativity): %.4f\n", edge_centric_pearson))
 
-# Compare with igraph's built-in degree assortativity
+# Comparing with igraph's built-in degree assortativity
 igraph_assort <- assortativity_degree(g, directed=FALSE)
 cat(sprintf("igraph::assortativity_degree: %.4f\n", igraph_assort))
 
@@ -41,7 +41,7 @@ k_nn <- sapply(node_ids, function(v) {
   if (length(nbs) == 0) return(NA)
   mean(deg[nbs$name])
 })
-# Remove nodes with degree 0 (isolated)
+# Removing nodes with degree 0 (isolated)
 valid <- !is.na(k_nn) & k > 0
 log_k <- log10(k[valid])
 log_k_nn <- log10(k_nn[valid])
