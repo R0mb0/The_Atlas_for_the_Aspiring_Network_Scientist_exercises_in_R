@@ -27,9 +27,6 @@ cat(sprintf("Standard deviation of edge weights: %.2f\n", w_sd))
 w_sorted <- sort(w)
 ccdf <- 1 - ecdf(w_sorted)(w_sorted) + 1/length(w_sorted)
 
-################################################################################
-# Optional 
-
 # Plotting CCDF (log-log scale, typical for weight distributions)
 plot(
   w_sorted, ccdf,
@@ -49,4 +46,3 @@ legend(
   ),
   bty="n"
 )
-################################################################################
