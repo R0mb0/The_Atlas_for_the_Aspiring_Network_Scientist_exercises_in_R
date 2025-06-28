@@ -12,11 +12,8 @@ colnames(edges) <- c("from", "to")
 
 # Solution
 
-################################################################################
-# Optional building a Plot
-
+# Building the graph
 g <- graph_from_data_frame(edges, directed=TRUE)
-################################################################################
 
 # Adjacency matrix
 A <- as.matrix(as_adjacency_matrix(g, sparse=FALSE))
