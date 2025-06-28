@@ -1,4 +1,19 @@
-# Create the graph
+# The network in http://www.networkatlas.eu/exercises/7/2/
+# data.txt is multilayer. The data has three columns: source and
+# target node, and edge type. The edge type is either the numerical
+# id of the layer, or “C” for an inter-layer coupling. Given that this is
+# a one-to-one multilayer network, determine whether this network
+# has a star, clique or chain coupling.
+
+library(here)
+
+# Reading the data
+data <- read.table("data.txt", header = FALSE, stringsAsFactors = FALSE)
+colnames(data) <- c("source", "target", "type")
+
+# Solution
+
+# Creating the graph
 g <- graph_from_data_frame(data[,c("source","target")], directed=FALSE)
 
 E(g)$color <- ifelse(data$type == "C", "red", "grey")
@@ -9,10 +24,10 @@ targets_inter <- unique(inter_layer$target)
 V(g)$color <- ifelse(V(g)$name %in% sources_inter, "skyblue",
                      ifelse(V(g)$name %in% targets_inter, "palegreen", "white"))
 
-# --- Plot with legend below ---
+# Plotting with legend below
 
 
-# Plot the graph, leaving space at the bottom
+# Plotting the graph, leaving space at the bottom
 plot(
   g,
   vertex.size=30,
@@ -23,7 +38,7 @@ plot(
   margin=0.2
 )
 
-# Add the legend below the plot
+# Addding the legend below the plot
 legend(
   x = "bottom",
   inset = -0.32, # negative inset puts legend below plot, adjust as needed
@@ -35,5 +50,5 @@ legend(
   lwd = c(2, 2, NA, NA),
   bty = "n",
   horiz = TRUE,
-  xpd = TRUE # allow drawing outside plot region
+  xpd = TRUE # allowing drawing outside plot region
 )
