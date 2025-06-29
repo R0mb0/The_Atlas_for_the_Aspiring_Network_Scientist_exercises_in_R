@@ -3,6 +3,7 @@
 # fourth column for this exercise)
 
 library(here)
+library(igraph)
 
 # Reading the data
 edges <- read.table("data.txt", header=FALSE)
