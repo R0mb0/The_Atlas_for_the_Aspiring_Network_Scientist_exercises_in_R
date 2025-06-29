@@ -980,6 +980,7 @@ install.packages("viridis")
 </summary>
 
 
+
 <details>
 <summary>
 
@@ -987,7 +988,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1024,7 +1030,14 @@ install.packages("viridis")
 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1070,6 +1083,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1077,7 +1092,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1104,7 +1124,14 @@ install.packages("viridis")
 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1153,6 +1180,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1160,7 +1189,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1188,7 +1222,14 @@ install.packages("viridis")
 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1259,6 +1300,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1266,7 +1309,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1310,7 +1358,14 @@ install.packages("viridis")
     print(mat)
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1380,6 +1435,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1387,7 +1444,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1402,7 +1464,14 @@ install.packages("viridis")
     # write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1438,6 +1507,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1445,7 +1516,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1461,7 +1537,14 @@ install.packages("viridis")
     # write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1500,6 +1583,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1507,7 +1592,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1531,7 +1621,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1577,6 +1674,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1584,7 +1683,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1602,7 +1706,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1648,6 +1759,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1655,7 +1768,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1670,7 +1788,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1722,6 +1847,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1729,7 +1856,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1744,7 +1876,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1779,6 +1918,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1786,7 +1927,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1801,7 +1947,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1835,6 +1988,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1842,7 +1997,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1857,7 +2017,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1899,6 +2066,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1906,7 +2075,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1919,7 +2093,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1953,6 +2134,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -1960,7 +2143,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -1975,7 +2163,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -1995,6 +2190,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2002,7 +2199,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2027,7 +2229,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2065,6 +2274,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2072,7 +2283,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2089,7 +2305,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2135,6 +2358,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2142,7 +2367,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2167,7 +2397,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2217,6 +2454,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2224,7 +2463,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2245,7 +2489,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2287,6 +2538,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2294,7 +2547,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2310,7 +2568,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2358,6 +2623,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2365,7 +2632,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2378,7 +2650,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2435,6 +2714,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2442,7 +2723,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2459,7 +2745,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2503,6 +2796,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2510,7 +2805,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2527,7 +2827,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2579,6 +2886,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2586,7 +2895,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2606,11 +2920,33 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
-    # Create the graph
+    # The network in http://www.networkatlas.eu/exercises/7/2/
+    # data.txt is multilayer. The data has three columns: source and
+    # target node, and edge type. The edge type is either the numerical
+    # id of the layer, or “C” for an inter-layer coupling. Given that this is
+    # a one-to-one multilayer network, determine whether this network
+    # has a star, clique or chain coupling.
+    
+    library(here)
+    
+    # Reading the data
+    data <- read.table("data.txt", header = FALSE, stringsAsFactors = FALSE)
+    colnames(data) <- c("source", "target", "type")
+    
+    # Solution
+    
+    # Creating the graph
     g <- graph_from_data_frame(data[,c("source","target")], directed=FALSE)
     
     E(g)$color <- ifelse(data$type == "C", "red", "grey")
@@ -2621,10 +2957,10 @@ install.packages("viridis")
     V(g)$color <- ifelse(V(g)$name %in% sources_inter, "skyblue",
                          ifelse(V(g)$name %in% targets_inter, "palegreen", "white"))
     
-    # --- Plot with legend below ---
+    # Plotting with legend below
     
     
-    # Plot the graph, leaving space at the bottom
+    # Plotting the graph, leaving space at the bottom
     plot(
       g,
       vertex.size=30,
@@ -2635,7 +2971,7 @@ install.packages("viridis")
       margin=0.2
     )
     
-    # Add the legend below the plot
+    # Addding the legend below the plot
     legend(
       x = "bottom",
       inset = -0.32, # negative inset puts legend below plot, adjust as needed
@@ -2647,10 +2983,12 @@ install.packages("viridis")
       lwd = c(2, 2, NA, NA),
       bty = "n",
       horiz = TRUE,
-      xpd = TRUE # allow drawing outside plot region
+      xpd = TRUE # allowing drawing outside plot region
     )
 
 ```
+
+</details>
 
 </details>
 
@@ -2661,7 +2999,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2682,7 +3025,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2772,6 +3122,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2779,7 +3131,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2800,7 +3157,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2852,6 +3216,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2859,7 +3225,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2880,7 +3251,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -2926,6 +3304,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -2933,7 +3313,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -2951,7 +3336,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3014,6 +3406,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3021,7 +3415,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3042,7 +3441,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3125,6 +3531,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3132,7 +3540,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3151,7 +3564,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3169,11 +3589,8 @@ install.packages("viridis")
     
     # Solution
     
-    ################################################################################
-    # Optional building a Plot
-    
+    # Building the graph
     g <- graph_from_data_frame(edges, directed=TRUE)
-    ################################################################################
     
     # Adjacency matrix
     A <- as.matrix(as_adjacency_matrix(g, sparse=FALSE))
@@ -3215,7 +3632,10 @@ install.packages("viridis")
     
     cat("\nEigenvalues of undirected Laplacian:\n")
     print(eigvals_undir)
+
 ```
+
+</details>
 
 </details>
 
@@ -3226,7 +3646,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3245,7 +3670,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3317,6 +3749,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3324,7 +3758,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3342,7 +3781,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3375,6 +3821,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3382,7 +3830,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3407,7 +3860,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3469,6 +3929,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3476,7 +3938,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3498,7 +3965,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3558,6 +4032,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3565,7 +4041,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3587,7 +4068,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3634,6 +4122,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3641,7 +4131,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3663,7 +4158,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3704,8 +4206,6 @@ install.packages("viridis")
     cat("Estimated exponent (linear regression):", -coef(fit)[2], "\n")
     summary(fit)
     
-    library(poweRlaw)
-    
     # Create a discrete power law object
     pl_model <- displ$new(deg)
     
@@ -3728,6 +4228,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3735,7 +4237,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3757,7 +4264,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3826,6 +4340,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3833,7 +4349,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3876,7 +4397,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3928,6 +4456,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3935,7 +4465,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -3953,7 +4488,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -3988,6 +4530,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -3995,7 +4539,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4012,7 +4561,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4050,6 +4606,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4057,7 +4615,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4076,7 +4639,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4133,6 +4703,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4140,7 +4712,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4159,7 +4736,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4223,6 +4807,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4230,7 +4816,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4246,7 +4837,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4294,6 +4892,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4301,7 +4901,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4320,7 +4925,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4383,6 +4995,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4390,7 +5004,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4411,7 +5030,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4471,6 +5097,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4478,7 +5106,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4496,7 +5129,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4546,6 +5186,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4553,7 +5195,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4571,7 +5218,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4600,6 +5254,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4607,7 +5263,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4625,7 +5286,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4653,6 +5321,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4660,7 +5330,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4678,7 +5353,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4741,6 +5423,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4748,7 +5432,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4766,7 +5455,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4804,6 +5500,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4811,7 +5509,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4829,7 +5532,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4866,6 +5576,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4873,7 +5585,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -4908,7 +5625,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -4978,6 +5702,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -4985,7 +5711,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5022,7 +5753,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5094,6 +5832,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5101,7 +5841,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5134,7 +5879,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5187,6 +5939,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5194,7 +5948,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5228,7 +5987,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5272,6 +6038,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5279,7 +6047,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5314,7 +6087,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5360,6 +6140,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5367,7 +6149,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5403,7 +6190,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5450,6 +6244,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5457,7 +6253,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5478,7 +6279,14 @@ install.packages("viridis")
 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5527,6 +6335,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5534,19 +6344,91 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
-
+    # What’s the most central node in the network used for the previous
+    # exercise according to PageRank? How does PageRank compares
+    # with the in-degree? (for instance, you could calculate the Spear-
+    # man and/or Pearson correlation between the two)
+    
+    library(here)
+    library(igraph)
+    
+    # Building the graph (reusing your code)
+    edges <- as.matrix(read.table("data.txt"))
+    g <- graph_from_edgelist(edges, directed=TRUE)
+    
+    # Write here the solution 
 ```
+
+</details>
+
+<details>
+<summary>
 
 ### Solution
 
+</summary>
+
 ```R
 
-
+    # What’s the most central node in the network used for the previous
+    # exercise according to PageRank? How does PageRank compares
+    # with the in-degree? (for instance, you could calculate the Spear-
+    # man and/or Pearson correlation between the two)
+    
+    library(here)
+    library(igraph)
+    
+    # Building the graph (reusing your code)
+    edges <- as.matrix(read.table("data.txt"))
+    g <- graph_from_edgelist(edges, directed=TRUE)
+    
+    # Solution 
+    
+    # Calculating PageRank for each node
+    pr <- page.rank(g)$vector
+    
+    # Finding the most central node(s) by PageRank
+    max_pr <- max(pr)
+    most_central_pagerank_nodes <- which(pr == max_pr)
+    
+    # Calculating in-degree for each node
+    in_deg <- degree(g, mode = "in")
+    
+    # Comparing PageRank with in-degree using correlations
+    spearman_cor <- cor(pr, in_deg, method = "spearman")
+    pearson_cor <- cor(pr, in_deg, method = "pearson")
+    
+    # Printing results
+    cat("PageRank for each node:\n")
+    for (i in 1:length(pr)) {
+      cat(sprintf("Node %s: %.4f\n", V(g)[i]$name, pr[i]))
+    }
+    cat("\n")
+    
+    cat("Most central node(s) by PageRank:", paste(V(g)[most_central_pagerank_nodes]$name, collapse=", "), "\n")
+    cat("Highest PageRank value:", max_pr, "\n")
+    cat("\n")
+    
+    cat("In-degree for each node:\n")
+    for (i in 1:length(in_deg)) {
+      cat(sprintf("Node %s: %d\n", V(g)[i]$name, in_deg[i]))
+    }
+    cat("\n")
+    
+    cat(sprintf("Spearman correlation between PageRank and in-degree: %.4f\n", spearman_cor))
+    cat(sprintf("Pearson correlation between PageRank and in-degree: %.4f\n", pearson_cor))
 ```
+
+</details>
 
 </details>
 
@@ -5557,7 +6439,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5576,7 +6463,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5623,6 +6517,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5630,7 +6526,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5665,7 +6566,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5717,6 +6625,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5724,7 +6634,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5743,7 +6658,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5773,6 +6695,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5780,7 +6704,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5799,7 +6728,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5829,6 +6765,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5836,7 +6774,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5863,7 +6806,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -5924,6 +6874,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -5931,7 +6883,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -5956,7 +6913,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6012,6 +6976,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6019,7 +6985,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6041,7 +7012,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6082,6 +7060,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6089,7 +7069,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6110,7 +7095,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6167,6 +7159,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6174,7 +7168,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6196,7 +7195,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6239,6 +7245,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6246,7 +7254,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6269,7 +7282,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6322,6 +7342,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6329,7 +7351,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6355,7 +7382,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6417,6 +7451,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6424,7 +7460,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6472,7 +7513,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6559,6 +7607,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6566,7 +7616,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6585,7 +7640,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6633,6 +7695,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6640,7 +7704,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6669,7 +7738,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6744,6 +7820,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6751,7 +7829,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6775,7 +7858,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6854,6 +7944,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6861,7 +7953,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6883,7 +7980,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -6926,6 +8030,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -6933,7 +8039,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -6959,7 +8070,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7012,6 +8130,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7019,7 +8139,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7035,7 +8160,14 @@ install.packages("viridis")
     # Solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7088,6 +8220,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7095,7 +8229,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7123,7 +8262,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7176,6 +8322,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7183,7 +8331,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7206,7 +8359,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7253,6 +8413,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7260,7 +8422,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7280,7 +8447,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7320,6 +8494,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7327,7 +8503,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7351,7 +8532,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7426,6 +8614,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7433,7 +8623,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7454,7 +8649,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7524,6 +8726,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7531,7 +8735,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7556,7 +8765,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7631,6 +8847,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7638,7 +8856,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7669,7 +8892,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7783,6 +9013,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7790,7 +9022,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7823,12 +9060,21 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
 
 ```
+
+</details>
 
 </details>
 
@@ -7839,7 +9085,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -7868,7 +9119,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -7988,6 +9246,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -7995,7 +9255,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8021,7 +9286,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8136,6 +9408,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8143,7 +9417,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8167,7 +9446,14 @@ install.packages("viridis")
 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8304,6 +9590,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8311,7 +9599,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8335,7 +9628,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8455,6 +9755,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8462,7 +9764,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8487,7 +9794,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8604,6 +9918,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8611,7 +9927,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8635,7 +9956,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8695,6 +10023,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8702,7 +10032,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8725,7 +10060,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8774,6 +10116,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8781,7 +10125,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8803,7 +10152,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8852,6 +10208,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8859,7 +10217,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8899,7 +10262,14 @@ install.packages("viridis")
     # Solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -8963,6 +10333,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -8970,7 +10342,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -8989,7 +10366,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9034,6 +10418,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9041,7 +10427,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9086,7 +10477,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9182,6 +10580,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9189,7 +10589,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9235,7 +10640,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9347,6 +10759,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9354,7 +10768,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9406,7 +10825,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9547,6 +10973,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9554,7 +10982,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9577,7 +11010,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9632,6 +11072,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9639,7 +11081,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9659,7 +11106,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9711,6 +11165,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9718,7 +11174,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9739,7 +11200,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9806,6 +11274,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9813,7 +11283,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -9855,7 +11330,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -9960,6 +11442,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -9967,7 +11451,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -10023,7 +11512,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -10162,6 +11658,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -10169,7 +11667,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -10225,7 +11728,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -10376,6 +11886,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -10383,7 +11895,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -10435,7 +11952,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -10569,6 +12093,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -10576,7 +12102,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -10595,7 +12126,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -10682,6 +12220,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -10689,7 +12229,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -10709,7 +12254,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -10914,6 +12466,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -10921,7 +12475,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -10940,7 +12499,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11047,6 +12613,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11054,7 +12622,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11078,7 +12651,14 @@ install.packages("viridis")
     # Write ehre the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11111,9 +12691,6 @@ install.packages("viridis")
     w_sorted <- sort(w)
     ccdf <- 1 - ecdf(w_sorted)(w_sorted) + 1/length(w_sorted)
     
-    ################################################################################
-    # Optional 
-    
     # Plotting CCDF (log-log scale, typical for weight distributions)
     plot(
       w_sorted, ccdf,
@@ -11133,8 +12710,10 @@ install.packages("viridis")
       ),
       bty="n"
     )
-    ################################################################################
+
 ```
+
+</details>
 
 </details>
 
@@ -11145,7 +12724,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11170,7 +12754,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11213,6 +12804,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11220,7 +12813,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11243,7 +12841,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11334,6 +12939,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11341,7 +12948,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11363,7 +12975,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11447,6 +13066,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11454,19 +13075,112 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
-
+    # Consider the network at http://www.networkatlas.eu/exercises/
+    # 28/1/data.txt. This is an undirected probabilistic network with
+    # four columns: the two connected nodes, the probability of the edge
+    # existing and the probability of the edge non existing. Generate all
+    # of its possible worlds, together with their probability of existing.
+    # (Note, you can ignore the fourth column for this exercise)
+    
+    #library(here)
+    library(igraph)
+    
+    #Reading the data
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_exist", "p_not_exist")
+    edges$p_exist <- as.numeric(edges$p_exist)
+    
+    n_edges <- nrow(edges)
+    n_worlds <- 2^n_edges
+    
+    # Write here the solution
 ```
+
+</details>
+
+<details>
+<summary>
 
 ### Solution
 
+</summary>
+
 ```R
 
-
+    # Consider the network at http://www.networkatlas.eu/exercises/
+    # 28/1/data.txt. This is an undirected probabilistic network with
+    # four columns: the two connected nodes, the probability of the edge
+    # existing and the probability of the edge non existing. Generate all
+    # of its possible worlds, together with their probability of existing.
+    # (Note, you can ignore the fourth column for this exercise)
+    
+    library(here)
+    library(igraph)
+    
+    #Reading the data
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_exist", "p_not_exist")
+    edges$p_exist <- as.numeric(edges$p_exist)
+    
+    n_edges <- nrow(edges)
+    n_worlds <- 2^n_edges
+    
+    # Solution 
+    
+    # Generating all possible worlds
+    worlds <- expand.grid(replicate(n_edges, c(0,1), simplify=FALSE))
+    colnames(worlds) <- paste0("edge", 1:n_edges)
+    
+    # Computing probabilities and pretty print
+    cat("Possible worlds (edges present = 1, absent = 0) and their probabilities:\n\n")
+    
+    for(i in 1:nrow(worlds)) {
+      world <- as.numeric(worlds[i,])
+      # For each edge, use p if present, (1-p) if absent
+      probs <- ifelse(world == 1, edges$p_exist, 1 - edges$p_exist)
+      prob_world <- prod(probs)
+      present_edges <- paste0("[", edges$node1[world==1], "-", edges$node2[world==1], "]", collapse=" ")
+      absent_edges <- paste0("[", edges$node1[world==0], "-", edges$node2[world==0], "]", collapse=" ")
+      cat(sprintf(
+        "World %2d: Present: %-20s  Absent: %-20s  P=%.4f\n",
+        i, ifelse(present_edges=="", "(none)", present_edges),
+        ifelse(absent_edges=="", "(none)", absent_edges),
+        prob_world
+      ))
+    }
+    
+    ################################################################################
+    # Optional
+    
+    # Plotting the probabilistic network with edge widths proportional to probability
+    g <- graph_from_data_frame(edges[,1:2], directed=FALSE)
+    E(g)$weight <- edges$p_exist
+    E(g)$label <- round(edges$p_exist, 2)
+    
+    set.seed(1)
+    plot(
+      g,
+      edge.width = 3 + 7*E(g)$weight,
+      edge.label = E(g)$label,
+      edge.color = "darkgray",
+      vertex.size = 30,
+      vertex.label.color = "black",
+      vertex.color = "skyblue",
+      main = "Probabilistic Network (edge label = probability, width ∝ probability)"
+    )
+    ################################################################################
 ```
+
+</details>
 
 </details>
 
@@ -11477,19 +13191,109 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
-
+    # Calculate the probabilistic degree distribution of the network used
+    # in exercise 1. (Note, you can ignore the fourth column for this
+    # exercise)
+    
+    library(here)
+    
+    # Reading the data 
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_exist", "p_not_exist")
+    edges$p_exist <- as.numeric(edges$p_exist)
+    
+    nodes <- sort(unique(c(edges$node1, edges$node2)))
+    n_nodes <- length(nodes)
+    n_edges <- nrow(edges)
+    n_worlds <- 2^n_edges
+    
+    # Write here the solution 
 ```
+
+</details>
+
+<details>
+<summary>
 
 ### Solution
 
+</summary>
+
 ```R
 
-
+    # Calculate the probabilistic degree distribution of the network used
+    # in exercise 1. (Note, you can ignore the fourth column for this
+    # exercise)
+    
+    library(here)
+    
+    # Reading the data 
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_exist", "p_not_exist")
+    edges$p_exist <- as.numeric(edges$p_exist)
+    
+    nodes <- sort(unique(c(edges$node1, edges$node2)))
+    n_nodes <- length(nodes)
+    n_edges <- nrow(edges)
+    n_worlds <- 2^n_edges
+    
+    # Solution 
+    
+    # Generating all possible worlds (edge presence/absence)
+    worlds <- expand.grid(replicate(n_edges, c(0,1), simplify=FALSE))
+    colnames(worlds) <- paste0("edge", 1:n_edges)
+    
+    # Tracking degree distribution for each node
+    max_degree <- n_edges  # upper bound for degree in this small network
+    deg_probs <- matrix(0, nrow=n_nodes, ncol=max_degree+1, dimnames=list(nodes, 0:max_degree))
+    
+    for(i in 1:nrow(worlds)) {
+      world <- as.numeric(worlds[i,])
+      # For each edge, use p if present, (1-p) if absent
+      probs <- ifelse(world == 1, edges$p_exist, 1 - edges$p_exist)
+      prob_world <- prod(probs)
+      
+      # Building adjacency for this world
+      adj <- matrix(0, nrow=n_nodes, ncol=n_nodes, dimnames=list(nodes, nodes))
+      for(j in seq_len(n_edges)) {
+        if (world[j] == 1) {
+          a <- as.character(edges$node1[j])
+          b <- as.character(edges$node2[j])
+          adj[a, b] <- 1
+          adj[b, a] <- 1
+        }
+      }
+      # Calculating degree for each node in this world
+      degs <- rowSums(adj)
+      for (k in seq_along(nodes)) {
+        deg_val <- degs[k]
+        deg_probs[k, deg_val+1] <- deg_probs[k, deg_val+1] + prob_world
+      }
+    }
+    
+    # Printing the results
+    cat("Probabilistic degree distribution for each node:\n")
+    for (i in seq_along(nodes)) {
+      node <- nodes[i]
+      dist <- deg_probs[i,]
+      nonzero <- which(dist > 0)
+      cat(sprintf("Node %s:\n", node))
+      for (d in nonzero-1) {
+        cat(sprintf("  Degree %d: P = %.4f\n", d, dist[d+1]))
+      }
+    }
 ```
+
+</details>
 
 </details>
 
@@ -11500,19 +13304,107 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
+    # Estimate the reliabilities of node 4 from the previous network with
+    # each of the other nodes in the network. (Note, you can ignore the
+    # fourth column for this exercise)
+    
+    library(here)
+    library(igraph)
+    
+    # Reading the data
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_exist", "p_not_exist")
+    edges$p_exist <- as.numeric(edges$p_exist)
+    
+    nodes <- sort(unique(c(edges$node1, edges$node2)))
+    n_edges <- nrow(edges)
+    n_worlds <- 2^n_edges
+    target_node <- "4"
+    other_nodes <- setdiff(nodes, target_node)
+    
+    # Write here the solution
 
 ```
+
+</details>
+
+<details>
+<summary>
 
 ### Solution
 
+</summary>
+
 ```R
 
+    # Estimate the reliabilities of node 4 from the previous network with
+    # each of the other nodes in the network. (Note, you can ignore the
+    # fourth column for this exercise)
+    
+    library(here)
+    library(igraph)
+    
+    # Reading the data
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_exist", "p_not_exist")
+    edges$p_exist <- as.numeric(edges$p_exist)
+    
+    nodes <- sort(unique(c(edges$node1, edges$node2)))
+    n_edges <- nrow(edges)
+    n_worlds <- 2^n_edges
+    target_node <- "4"
+    other_nodes <- setdiff(nodes, target_node)
+    
+    # Solution 
+    
+    # Generating all possible worlds
+    worlds <- expand.grid(replicate(n_edges, c(0,1), simplify=FALSE))
+    colnames(worlds) <- paste0("edge", 1:n_edges)
+    
+    # Initializing reliabilities
+    reliabilities <- setNames(rep(0, length(other_nodes)), other_nodes)
+    
+    for(i in 1:nrow(worlds)) {
+      world <- as.numeric(worlds[i,])
+      probs <- ifelse(world == 1, edges$p_exist, 1 - edges$p_exist)
+      prob_world <- prod(probs)
+      
+      # Building igraph for this world
+      present <- which(world == 1)
+      if (length(present) == 0) next
+      g_world <- graph_from_data_frame(
+        edges[present, 1:2, drop=FALSE], directed=FALSE, vertices=nodes
+      )
+      
+      # For each other node, check if connected to node 4
+      for (node in other_nodes) {
+        if (are.connected(g_world, as.character(target_node), as.character(node)) ||
+            (target_node %in% V(g_world)$name && node %in% V(g_world)$name &&
+             (length(shortest_paths(g_world, from=as.character(target_node), to=as.character(node))$vpath[[1]]) > 0
+             ))) {
+          reliabilities[node] <- reliabilities[node] + prob_world
+        }
+      }
+    }
+    
+    # Printing results
+    cat(sprintf("Reliabilities of node %s with other nodes:\n", target_node))
+    for (node in other_nodes) {
+      cat(sprintf("  Node %s: %.4f\n", node, reliabilities[node]))
+    }
 
 ```
+
+</details>
 
 </details>
 
@@ -11523,19 +13415,111 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
-
+    # Calculate the length of the shortest path between node 2 and node
+    # 4 in the previous network using fuzzy logic, assuming that the
+    # third column reports the probability of the edge to have weight 1
+    # and the fourth column reports the probability of the edge to have
+    # weight 2.
+    
+    library(here)
+    library(igraph)
+    
+    # Loading data
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_1", "p_2")
+    edges$p_1 <- as.numeric(edges$p_1)
+    edges$p_2 <- as.numeric(edges$p_2)
+    
+    n_edges <- nrow(edges)
+    nodes <- sort(unique(c(edges$node1, edges$node2)))
+    
+    # Write here the solution
 ```
+
+</details>
+
+<details>
+<summary>
 
 ### Solution
 
+</summary>
+
 ```R
 
-
+    # Calculate the length of the shortest path between node 2 and node
+    # 4 in the previous network using fuzzy logic, assuming that the
+    # third column reports the probability of the edge to have weight 1
+    # and the fourth column reports the probability of the edge to have
+    # weight 2.
+    
+    library(here)
+    library(igraph)
+    
+    # Loading data
+    edges <- read.table("data.txt", header=FALSE)
+    colnames(edges) <- c("node1", "node2", "p_1", "p_2")
+    edges$p_1 <- as.numeric(edges$p_1)
+    edges$p_2 <- as.numeric(edges$p_2)
+    
+    n_edges <- nrow(edges)
+    nodes <- sort(unique(c(edges$node1, edges$node2)))
+    
+    # Solution 
+    
+    # Generating all possible edge weight combinations (worlds)
+    worlds <- expand.grid(replicate(n_edges, c(1,2), simplify=FALSE))
+    colnames(worlds) <- paste0("edge", 1:n_edges)
+    
+    # Function to get probability of a world
+    world_prob <- function(weights, p1s, p2s) {
+      prod(ifelse(weights == 1, p1s, p2s))
+    }
+    
+    # For each world, calculate shortest path from 2 to 4
+    dist_probs <- list()
+    for (i in 1:nrow(worlds)) {
+      weights <- as.numeric(worlds[i,])
+      # World probability
+      prob <- world_prob(weights, edges$p_1, edges$p_2)
+      # Constructing weighted graph for this world
+      g_world <- graph_from_data_frame(
+        edges[, 1:2], directed=FALSE, vertices=nodes
+      )
+      E(g_world)$weight <- weights
+      # Computing shortest path length from 2 to 4
+      path_len <- suppressWarnings(shortest.paths(g_world, v="2", to="4", mode="all", weights=E(g_world)$weight))
+      # If no path, path_len will be Inf
+      if (is.infinite(path_len)) {
+        path_len <- NA
+      }
+      # Adding probability to this path length
+      key <- as.character(path_len)
+      if (is.null(dist_probs[[key]])) dist_probs[[key]] <- 0
+      dist_probs[[key]] <- dist_probs[[key]] + prob
+    }
+    
+    # Printing the fuzzy shortest path distribution
+    cat("Fuzzy shortest path length distribution (from node 2 to 4):\n")
+    for (k in sort(names(dist_probs))) {
+      if (is.na(as.numeric(k))) {
+        cat(sprintf("  No path: P = %.4f\n", dist_probs[[k]]))
+      } else {
+        cat(sprintf("  Length = %s: P = %.4f\n", k, dist_probs[[k]]))
+      }
+    }
 ```
+
+</details>
 
 </details>
 
@@ -11546,7 +13530,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11568,7 +13557,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11637,6 +13633,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11644,7 +13642,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11691,7 +13694,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11815,6 +13825,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11822,7 +13834,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -11855,7 +13872,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -11976,6 +14000,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -11983,7 +14009,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -12002,7 +14033,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -12144,6 +14182,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -12151,7 +14191,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -12176,7 +14221,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -12256,6 +14308,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -12263,7 +14317,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -12283,7 +14342,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -12322,6 +14388,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -12329,7 +14397,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -12352,7 +14425,14 @@ install.packages("viridis")
     # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -12423,6 +14503,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -12430,7 +14512,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
@@ -12459,7 +14546,14 @@ install.packages("viridis")
     # Write here the solution
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -12548,6 +14642,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -12555,14 +14651,44 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
+
+</summary>
 
 ```R
 
-
+    # Calculate the degree assortativity of the network from the previ-
+    # ous question using the first (edge-centric Pearson correlation) and
+    # the second (node-centric power fit) strategies explained in Section
+    # 31.1.
+    
+    library(here)
+    library(igraph)
+    
+    # Load edge list from local file
+    edges <- read.table("data.txt")
+    colnames(edges) <- c("from", "to")
+    
+    # Build graph
+    g <- graph_from_data_frame(edges, directed=FALSE)
+    
+    deg <- degree(g)
+    V(g)$deg <- deg
+    
+    # Write here the solution 
 ```
 
+</details>
+
+<details>
+<summary>
+
 ### Solution
+
+</summary>
 
 ```R
 
@@ -12596,7 +14722,7 @@ install.packages("viridis")
     
     cat(sprintf("Edge-centric Pearson correlation (degree assortativity): %.4f\n", edge_centric_pearson))
     
-    # Compare with igraph's built-in degree assortativity
+    # Comparing with igraph's built-in degree assortativity
     igraph_assort <- assortativity_degree(g, directed=FALSE)
     cat(sprintf("igraph::assortativity_degree: %.4f\n", igraph_assort))
     
@@ -12609,7 +14735,7 @@ install.packages("viridis")
       if (length(nbs) == 0) return(NA)
       mean(deg[nbs$name])
     })
-    # Remove nodes with degree 0 (isolated)
+    # Removing nodes with degree 0 (isolated)
     valid <- !is.na(k_nn) & k > 0
     log_k <- log10(k[valid])
     log_k_nn <- log10(k_nn[valid])
@@ -12623,6 +14749,8 @@ install.packages("viridis")
 
 </details>
 
+</details>
+
 <details>
 <summary>
 
@@ -12630,14 +14758,12 @@ install.packages("viridis")
 
 </summary>
 
+<details>
+<summary>
+
 ### Problem
 
-```R
-
-
-```
-
-### Solution
+</summary>
 
 ```R
 
@@ -12646,6 +14772,21 @@ install.packages("viridis")
 
 </details>
 
+<details>
+<summary>
+
+### Solution
+
+</summary>
+
+```R
+
+
+```
+
+</details>
+
+</details>
 
 
 </details>
