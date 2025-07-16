@@ -5,7 +5,7 @@
 library(here)
 library(igraph)
 
-# Loading the edge list and build the graph
+# Loading the edge list and building the graph
 edges <- read.table("data.txt")
 colnames(edges) <- c("from", "to")
 

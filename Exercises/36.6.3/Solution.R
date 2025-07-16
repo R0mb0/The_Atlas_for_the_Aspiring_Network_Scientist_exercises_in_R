@@ -46,7 +46,7 @@ normalized_cut_size <- function(g, comm_nodes) {
 
 #================== End Helper functions for metrics ==================
 
-# Loading the edge list and build the graph
+# Loading the edge list and building the graph
 edges <- read.table("data.txt")
 colnames(edges) <- c("from", "to")
 g <- graph_from_data_frame(edges, directed=FALSE)

@@ -19,7 +19,7 @@ get_community <- function(g, node) {
 # Loading both networks
 edges1 <- read.table("data1.txt")
 colnames(edges1) <- c("from", "to")
-# Build the graph 
+# Building the graph 
 g1 <- graph_from_data_frame(edges1, directed=FALSE)
 
 edges2 <- read.table("data2.txt")
