@@ -6,21 +6,30 @@
 # the clusters with the ground truth you can find at http://www.
 # networkatlas.eu/exercises/43/1/nodes.txt?
 
-library(igraph)
 library(here)
+library(data.table)
+library(ggplot2)
+library(stats)
 library(Rtsne)
-library(word2vec)
-library(stats) # for kmeans
+library(wordVectors)
+library(cluster)
 
-# Loading the edge list and building the graph
-network_data <- read.table(here("data.txt"), header = FALSE)
-network_data <- as.matrix(network_data)
-network_data_char <- apply(network_data, 2, as.character)
-g <- graph_from_edgelist(network_data_char, directed = FALSE)
+# Loading the 2D embeddings from the previous exercise
+embedding_file <- here("walks.bin")
+embeddings <- read.vectors(embedding_file)
 
-# Loading the node colors (ground truth labels)
-node_colors_data <- read.table(here("nodes.txt"), header = FALSE)
-node_colors <- node_colors_data[,2]
-names(node_colors) <- as.character(node_colors_data[,1])
+# Getting the matrix of embeddings for all nodes
+nodes_in_embedding <- rownames(embeddings)
+X <- embeddings[nodes_in_embedding, ]
+set.seed(42)
+tsne_result <- Rtsne(as.matrix(X), dims = 2)
+embedding_2d <- as.data.frame(tsne_result$Y)
+embedding_2d$node <- nodes_in_embedding
 
-# Write here the solution
+# Loading node categories
+nodes_info <- fread(here("nodes.txt"), header = FALSE)
+colnames(nodes_info) <- c("node", "category")
+nodes_info$node <- as.character(nodes_info$node)
+embedding_2d <- merge(embedding_2d, nodes_info, by = "node", all.x = TRUE)
+
+# Write here the solution 
