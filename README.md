@@ -971,6 +971,7 @@ install.packages("Matrix")
 install.packages("ggplot2")
 install.packages("viridis")
 install.packages("biclust")
+install.packages("reticulate")
 ```
 
 <details>
