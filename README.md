@@ -972,8 +972,8 @@ install.packages("ggplot2")
 install.packages("viridis")
 install.packages("biclust")
 install.packages("Rtsne")
-install.packages("word2vec")
-install.packages("stats")
+install.packages("wordVectors")
+install.packages("data.table")
 ```
 
 <details>
