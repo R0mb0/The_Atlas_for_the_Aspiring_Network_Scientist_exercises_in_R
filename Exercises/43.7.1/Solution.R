@@ -6,71 +6,68 @@
 # embeddings as spatial coordinates. Use http://www.networkatlas.
 # eu/exercises/43/1/nodes.txt to determine the node colors.
 
-library(igraph)
 library(here)
+library(data.table)
+library(igraph)
+library(wordVectors)
 library(Rtsne)
-library(word2vec)
+library(ggplot2)
 
-# Loading the edge list and building the graph
-network_data <- read.table(here("data.txt"), header = FALSE)
-network_data <- as.matrix(network_data)
-network_data_char <- apply(network_data, 2, as.character)
-g <- graph_from_edgelist(network_data_char, directed = FALSE)
+# Loading the edge list
+edges <- fread(here("data.txt"), header = FALSE)
+colnames(edges) <- c("from", "to")
 
-# Loading the node colors
-node_colors_data <- read.table(here("nodes.txt"), header = FALSE)
-node_colors <- node_colors_data[,2]
-names(node_colors) <- as.character(node_colors_data[,1])
+# Building the undirected graph
+g <- graph_from_data_frame(edges, directed = FALSE)
 
-# Idea of solution 
-
-# Generating random walks
-set.seed(42)
-num_walks <- 10000
-walk_length <- 6
+# Getting the node names
 nodes <- V(g)$name
-walks <- vector("list", num_walks)
 
-for (i in 1:num_walks) {
-  current <- sample(nodes, 1)
-  walk <- as.character(current)
-  for (j in 2:walk_length) {
-    neighbors_list <- neighbors(g, current)
-    neighbors_char <- as.character(neighbors_list$name)
-    if (length(neighbors_char) == 0) break
-    current <- sample(neighbors_char, 1)
-    walk <- c(walk, current)
-  }
-  walks[[i]] <- walk
+# This should be the solution 
+
+# Performing random walks
+set.seed(42)
+walk_length <- 6
+n_walks <- 10000
+walks <- vector("list", n_walks)
+
+for (i in seq_len(n_walks)) {
+  start_node <- sample(nodes, 1)
+  walk <- random_walk(g, start_node, steps = walk_length, mode = "all")
+  walks[[i]] <- as.character(walk)
 }
 
-# Writing walks to a temporary text file for word2vec
+# Saving walks to a text file for wordVectors
+walks_char <- sapply(walks, paste, collapse = " ")
 walks_file <- here("walks.txt")
-writeLines(sapply(walks, paste, collapse = " "), walks_file)
+writeLines(walks_char, walks_file)
 
-# Training Word2Vec embeddings (d = 32)
-emb <- word2vec::word2vec(walks_file, type = "skip-gram", dim = 32, window = 5, min_count = 1, iter = 10)
+# Training Word2Vec model with d = 32
+embedding_file <- here("walks.bin")
+train_word2vec(walks_file, embedding_file, vectors = 32, threads = 2, window = 4, min_count = 1, force = TRUE)
 
-# Extracting the node embedding matrix from the Word2Vec model using as.data.frame
-emb_df <- word2vec::as.data.frame(emb)
-emb_matrix <- as.matrix(emb_df)
-rownames(emb_matrix) <- emb_df$word
+# Loading embeddings
+embeddings <- read.vectors(embedding_file)
 
-# Filtering only the nodes present in your graph
-emb_matrix <- emb_matrix[nodes, -1, drop = FALSE] # drop the 'word' column
+# Getting the matrix of embeddings for all nodes in the graph
+nodes_in_embedding <- intersect(nodes, rownames(embeddings))
+X <- embeddings[nodes_in_embedding, ]
 
-# Reducing to 2D using t-SNE
+# Reducing to two dimensions using t-SNE
 set.seed(42)
-tsne_result <- Rtsne(emb_matrix, dims = 2)
-embedding_2d <- tsne_result$Y
+tsne_result <- Rtsne(as.matrix(X), dims = 2)
+embedding_2d <- as.data.frame(tsne_result$Y)
+embedding_2d$node <- nodes_in_embedding
 
-# Visualizing the network using the 2D embeddings as coordinates
-plot(
-  embedding_2d[,1],
-  embedding_2d[,2],
-  col = as.factor(node_colors[nodes]),
-  pch = 19,
-  xlab = "TSNE dim 1",
-  ylab = "TSNE dim 2",
-  main = "2D Node Embeddings Visualization"
-)
+# Loading node categories
+nodes_info <- fread(here("nodes.txt"), header = FALSE)
+colnames(nodes_info) <- c("node", "category")
+nodes_info$node <- as.character(nodes_info$node)
+embedding_2d <- merge(embedding_2d, nodes_info, by = "node", all.x = TRUE)
+
+# Visualizing the network using 2D embeddings as coordinates and coloring by node category
+ggplot(embedding_2d, aes(x = V1, y = V2, color = as.factor(category))) +
+  geom_point(size = 2) +
+  labs(title = "Network Visualization using Word2Vec Embeddings (t-SNE Reduced)",
+       x = "t-SNE 1", y = "t-SNE 2", color = "Node Category") +
+  theme_minimal()

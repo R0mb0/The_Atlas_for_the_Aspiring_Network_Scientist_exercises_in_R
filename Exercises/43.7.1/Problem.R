@@ -6,20 +6,21 @@
 # embeddings as spatial coordinates. Use http://www.networkatlas.
 # eu/exercises/43/1/nodes.txt to determine the node colors.
 
-library(igraph)
 library(here)
+library(data.table)
+library(igraph)
+library(wordVectors)
 library(Rtsne)
-library(word2vec)
+library(ggplot2)
 
-# Loading the edge list and building the graph
-network_data <- read.table(here("data.txt"), header = FALSE)
-network_data <- as.matrix(network_data)
-network_data_char <- apply(network_data, 2, as.character)
-g <- graph_from_edgelist(network_data_char, directed = FALSE)
+# Loading the edge list
+edges <- fread(here("data.txt"), header = FALSE)
+colnames(edges) <- c("from", "to")
 
-# Loading the node colors
-node_colors_data <- read.table(here("nodes.txt"), header = FALSE)
-node_colors <- node_colors_data[,2]
-names(node_colors) <- as.character(node_colors_data[,1])
+# Building the undirected graph
+g <- graph_from_data_frame(edges, directed = FALSE)
 
-# Write here the solution 
+# Getting the node names
+nodes <- V(g)$name
+
+# Write here the solution
