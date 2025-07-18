@@ -1,7 +1,7 @@
-#Now perform asynchronous label propagation directly on the
-#bipartite structure. Calculate the NMI with the ground truth. Since
-#asynchronous label propagation is randomized, take the average of
-#ten runs. Do you get a higher NMI?
+# Now perform asynchronous label propagation directly on the
+# bipartite structure. Calculate the NMI with the ground truth. Since
+# asynchronous label propagation is randomized, take the average of
+# ten runs. Do you get a higher NMI?
 
 library(here)
 library(igraph)
@@ -11,8 +11,6 @@ edges <- read.table(here("data.txt"))
 colnames(edges) <- c("from", "to")
 edges$from <- as.character(edges$from)
 edges$to <- as.character(edges$to)
-
-# Solution 
 
 # Inferring bipartite sets using the first 60 rows
 N <- 60
@@ -38,6 +36,8 @@ partition_to_list <- function(membership) {
 
 # Sourcing the NMI function
 source(here("OverlappingNMI.R"))
+
+# Solution 
 
 # Running asynchronous label propagation 10 times and calculating NMI each time
 n_runs <- 10

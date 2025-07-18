@@ -17,8 +17,6 @@ colnames(edges) <- c("from", "to")
 edges$from <- as.character(edges$from)
 edges$to <- as.character(edges$to)
 
-# Solution 
-
 # Inferring bipartite sets using the first 60 rows
 N <- 60
 set1 <- unique(edges$from[1:N])
@@ -42,6 +40,8 @@ g2 <- proj$proj2
 gt <- read.table(here("nodes.txt"), header=TRUE)
 gt_comm <- as.character(gt$truecomm)
 names(gt_comm) <- as.character(gt$node)
+
+# Solution 
 
 get_communities <- function(cl, n_communities) {
   memb <- tryCatch(

@@ -15,8 +15,6 @@ colnames(edges) <- c("from", "to")
 edges$from <- as.character(edges$from)
 edges$to <- as.character(edges$to)
 
-# Solution 
-
 # Inferring bipartite sets using the first 60 rows
 N <- 60
 set1 <- unique(edges$from[1:N])
@@ -43,6 +41,8 @@ for(i in seq_len(nrow(edges))) {
 gt <- read.table(here("nodes.txt"), header=TRUE)
 gt_comm <- as.character(gt$truecomm)
 names(gt_comm) <- as.character(gt$node)
+
+# Solution 
 
 # Performing biclustering on the bi-adjacency matrix
 bic_res <- biclust(adj_mat, method=BCPlaid())
