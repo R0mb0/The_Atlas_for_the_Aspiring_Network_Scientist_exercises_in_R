@@ -973,6 +973,7 @@ install.packages("viridis")
 install.packages("biclust")
 install.packages("Rtsne")
 install.packages("word2vec")
+install.packages("stats")
 ```
 
 <details>
