@@ -971,7 +971,8 @@ install.packages("Matrix")
 install.packages("ggplot2")
 install.packages("viridis")
 install.packages("biclust")
-install.packages("reticulate")
+install.packages("Rtsne")
+install.packages("word2vec")
 ```
 
 <details>
