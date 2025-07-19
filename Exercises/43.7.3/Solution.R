@@ -1,136 +1,97 @@
-library(igraph)
+# Compare the NMI score from the previous exercise to the one
+# you would get from a classical community discovery like label
+# propagation. Note: both methods are randomized, so you could
+# perform them multiple times and see the distributions of their
+# NMIs.
+
 library(here)
+library(data.table)
+library(igraph)
+library(wordVectors)
 library(Rtsne)
-library(word2vec)
-library(stats)
+library(ggplot2)
 
 # Loading the edge list and building the graph
-network_data <- read.table(here("data.txt"), header = FALSE)
-network_data <- as.matrix(network_data)
-network_data_char <- apply(network_data, 2, as.character)
-g <- graph_from_edgelist(network_data_char, directed = FALSE)
+edges <- fread(here("data.txt"), header = FALSE)
+colnames(edges) <- c("from", "to")
+g <- graph_from_data_frame(edges, directed = FALSE)
 
-# Loading the node colors (ground truth labels)
-node_colors_data <- read.table(here("nodes.txt"), header = FALSE)
-node_colors <- node_colors_data[,2]
-names(node_colors) <- as.character(node_colors_data[,1])
+# This is a idea of solution 
 
-# Generating random walks
-set.seed(42)
-num_walks <- 10000
-walk_length <- 6
+# Getting the node names
 nodes <- V(g)$name
-walks <- vector("list", num_walks)
 
-for (i in 1:num_walks) {
-  current <- sample(nodes, 1)
-  walk <- as.character(current)
-  for (j in 2:walk_length) {
-    neighbors_list <- neighbors(g, current)
-    neighbors_char <- as.character(neighbors_list$name)
-    if (length(neighbors_char) == 0) break
-    current <- sample(neighbors_char, 1)
-    walk <- c(walk, current)
-  }
-  walks[[i]] <- walk
+# Performing random walks
+set.seed(42)
+walk_length <- 6
+n_walks <- 10000
+walks <- vector("list", n_walks)
+for (i in seq_len(n_walks)) {
+  start_node <- sample(nodes, 1)
+  walk <- random_walk(g, start_node, steps = walk_length, mode = "all")
+  walks[[i]] <- as.character(walk)
 }
 
-# Writing walks to a temporary text file for word2vec
+# Saving the walks
+walks_char <- sapply(walks, paste, collapse = " ")
 walks_file <- here("walks.txt")
-writeLines(sapply(walks, paste, collapse = " "), walks_file)
+writeLines(walks_char, walks_file)
 
-# Training Word2Vec embeddings (d = 32)
-emb <- word2vec::word2vec(walks_file, type = "skip-gram", dim = 32, window = 5, min_count = 1, iter = 10)
-emb_df <- word2vec::as.data.frame(emb)
-emb_matrix <- as.matrix(emb_df)
-rownames(emb_matrix) <- emb_df$word
-emb_matrix <- emb_matrix[nodes, -1, drop = FALSE] # drop the 'word' column
+# Training Word2Vec model with d = 32
+embedding_file <- here("walks.bin")
+train_word2vec(walks_file, embedding_file, vectors = 32, threads = 2, window = 4, min_count = 1, force = TRUE)
 
-# Reducing to 2D using t-SNE
+# Loading the embeddings
+embeddings <- read.vectors(embedding_file)
+nodes_in_embedding <- rownames(embeddings)
+X <- embeddings[nodes_in_embedding, ]
+
+# Reducing to two dimensions using t-SNE
 set.seed(42)
-tsne_result <- Rtsne(emb_matrix, dims = 2)
-embedding_2d <- tsne_result$Y
+tsne_result <- Rtsne(as.matrix(X), dims = 2)
+embedding_2d <- as.data.frame(tsne_result$Y)
+embedding_2d$node <- nodes_in_embedding
 
-# Running k-means clustering to find 4 clusters
+# Loading node categories
+nodes_info <- fread(here("nodes.txt"), header = FALSE)
+colnames(nodes_info) <- c("node", "category")
+nodes_info$node <- as.character(nodes_info$node)
+embedding_2d <- merge(embedding_2d, nodes_info, by = "node", all.x = TRUE)
+
+# Performing k-means clustering
 set.seed(42)
-kmeans_result <- kmeans(embedding_2d, centers = 4)
-clusters <- kmeans_result$cluster
+kmeans_result <- kmeans(embedding_2d[, c("V1", "V2")], centers = 4)
+embedding_2d$cluster <- kmeans_result$cluster
 
-# Converting clustering results and ground truth to communities format
-# Each cluster becomes a list of node names
-clustering_communities <- lapply(1:4, function(k) nodes[clusters == k])
-# Each ground truth label becomes a list of node names
-ground_truth_labels <- unique(node_colors[nodes])
-ground_truth_communities <- lapply(ground_truth_labels, function(l) nodes[node_colors[nodes] == l])
+# Preparing the clustering cover and ground truth cover for NMI
+clustering_cover <- lapply(1:4, function(k) embedding_2d$node[embedding_2d$cluster == k])
+ground_truth_cover <- lapply(sort(unique(embedding_2d$category)), function(k) embedding_2d$node[embedding_2d$category == k])
 
-# Copying the NMI implementation provided
-get_membership_matrix <- function(communities, all_nodes) {
-  mat <- matrix(0, nrow=length(all_nodes), ncol=length(communities))
-  rownames(mat) <- all_nodes
-  for (j in seq_along(communities)) {
-    idx <- match(communities[[j]], all_nodes)
-    idx <- idx[!is.na(idx)]
-    if (length(idx) > 0) {
-      mat[idx, j] <- 1
-    }
-  }
-  mat
-}
+# Sourcing the NMI library
+source(here("NMI.R"))
 
-NMI <- function(cover1, cover2) {
-  all_nodes <- sort(unique(c(unlist(cover1), unlist(cover2))))
-  X <- get_membership_matrix(cover1, all_nodes)
-  Y <- get_membership_matrix(cover2, all_nodes)
-  n <- length(all_nodes)
-  safe_log2 <- function(x) ifelse(x > 0, log2(x), 0)
-  cond_entropy <- function(A, B) {
-    kA <- ncol(A)
-    kB <- ncol(B)
-    H <- 0
-    for (i in 1:kA) {
-      minH <- Inf
-      for (j in 1:kB) {
-        Nij <- sum(A[,i] & B[,j])
-        if (Nij == 0) next
-        Ni <- sum(A[,i])
-        Nj <- sum(B[,j])
-        pij <- Nij / n
-        pi <- Ni / n
-        pj <- Nj / n
-        Hij <- 0
-        if (pij > 0 && (pi * pj) > 0)
-          Hij <- Hij - (pij) * safe_log2(pij / (pi * pj))
-        if ((Ni-Nij) > 0 && (pi * (1-pj)) > 0)
-          Hij <- Hij - ((Ni-Nij)/n) * safe_log2(((Ni-Nij)/n) / (pi*(1-pj)))
-        if ((Nj-Nij) > 0 && ((1-pi)*pj) > 0)
-          Hij <- Hij - ((Nj-Nij)/n) * safe_log2(((Nj-Nij)/n) / ((1-pi)*pj))
-        if ((n-Ni-Nj+Nij) > 0 && ((1-pi)*(1-pj)) > 0)
-          Hij <- Hij - ((n-Ni-Nj+Nij)/n) * safe_log2(((n-Ni-Nj+Nij)/n) / ((1-pi)*(1-pj)))
-        if (!is.nan(Hij) && Hij < minH)
-          minH <- Hij
-      }
-      if (is.finite(minH)) H <- H + minH
-    }
-    H / kA
-  }
-  H_XY <- cond_entropy(X, Y)
-  H_YX <- cond_entropy(Y, X)
-  NMI_value <- 1 - 0.5 * (H_XY + H_YX)
-  NMI_value
-}
+# Calculating NMI between k-means clusters and ground truth
+nmi_kmeans <- NMI(clustering_cover, ground_truth_cover)
+cat("NMI (k-means):", nmi_kmeans, "\n")
 
-# Calculating NMI score for k-means clustering vs ground truth
-nmi_kmeans <- NMI(clustering_communities, ground_truth_communities)
-cat("NMI for k-means clustering:", nmi_kmeans, "\n")
-
-# Running label propagation for classical community discovery
+# Performing label propagation for community detection
 set.seed(42)
-lp_membership <- cluster_label_prop(g)
-lp_communities <- communities(lp_membership)
+lp <- label_propagation_community(g)
+lp_membership <- membership(lp)
+lp_cover <- lapply(sort(unique(lp_membership)), function(c) names(lp_membership)[lp_membership == c])
 
-# Calculating NMI score for label propagation vs ground truth
-nmi_labelprop <- NMI(lp_communities, ground_truth_communities)
-cat("NMI for label propagation:", nmi_labelprop, "\n")
+# Calculating NMI between label propagation and ground truth
+nmi_labelprop <- NMI(lp_cover, ground_truth_cover)
+cat("NMI (label propagation):", nmi_labelprop, "\n")
 
-# Printing instructions for comparing distributions
-cat("You can repeat the clustering and label propagation multiple times to see the distributions of NMI scores due to randomness.\n")
+# Visualizing the clusters from both methods
+embedding_2d$lp_cluster <- lp_membership[embedding_2d$node]
+ggplot(embedding_2d, aes(x = V1, y = V2, color = as.factor(cluster))) +
+  geom_point(size = 2) +
+  labs(title = "t-SNE Embeddings Clustered (kMeans, k=4)", x = "t-SNE 1", y = "t-SNE 2", color = "kMeans Cluster") +
+  theme_minimal()
+
+ggplot(embedding_2d, aes(x = V1, y = V2, color = as.factor(lp_cluster))) +
+  geom_point(size = 2) +
+  labs(title = "t-SNE Embeddings Clustered (Label Propagation)", x = "t-SNE 1", y = "t-SNE 2", color = "Label Propagation Cluster") +
+  theme_minimal()
