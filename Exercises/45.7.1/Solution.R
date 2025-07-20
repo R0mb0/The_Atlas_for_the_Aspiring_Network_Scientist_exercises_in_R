@@ -14,12 +14,12 @@ network_data <- read.table(here("network.txt"), header = FALSE)
 # Reading the features data
 features <- as.matrix(read.table(here("features.txt"), header = FALSE))
 
-# Write here the solution 
-
 # Extracting edge information
 src <- network_data[, 1] + 1
 dst <- network_data[, 2] + 1
 alpha <- network_data[, 3]
+
+# Solution 
 
 # Determining the number of nodes
 num_nodes <- max(c(src, dst))

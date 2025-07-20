@@ -14,4 +14,9 @@ network_data <- read.table(here("network.txt"), header = FALSE)
 # Reading the features data
 features <- as.matrix(read.table(here("features.txt"), header = FALSE))
 
+# Extracting edge information
+src <- network_data[, 1] + 1
+dst <- network_data[, 2] + 1
+alpha <- network_data[, 3]
+
 # Write here the solution 
