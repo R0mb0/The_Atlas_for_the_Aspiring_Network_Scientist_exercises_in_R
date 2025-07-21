@@ -984,6 +984,6 @@ install.packages("microbenchmark")
 
 </summary>
 
-[Click here to see all exercises](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/Exercise_summary/Exercise_summary.md)
+### [Click here to see all exercises](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/blob/main/Exercise_summary/Exercise_summary.md)
 
 </details>
