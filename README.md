@@ -2,6 +2,7 @@ Urbino`s University - Computing and digital innovation - Social Network Analysis
 
 # The Atlas for the Aspiring Network Scientist exercises in R
 
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/03e15c462f254a53995aaf2b0dc97cb1)](https://app.codacy.com/gh/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R)
