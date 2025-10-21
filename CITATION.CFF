@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you refer to this software, please cite it as below."
+authors:
+- family-names: "Rombaldoni"
+  given-names: "Francesco"
+title: "The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2025-10-21
+url: "https://github.com/R0mb0/The_Atlas_for_the_Aspiring_Network_Scientist_exercises_in_R"
